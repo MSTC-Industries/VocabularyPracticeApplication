@@ -1,0 +1,8 @@
+.lesson_container {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    flex-direction: row;
+}
