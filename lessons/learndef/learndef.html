@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="learndef.css">
     <title>Learn Definitions</title>
 </head>
 <body onload="learndef_onload()">
-    <h1 id="title">Defenition quiz for lesson 00</h1>
+    <h1 id="title">Definition quiz for lesson 00</h1>
     <p id="question">word</p>
 
     <div id="anwsers">
-        <button>defenition A</button>
-        <button>defenition B</button>
-        <button>defenition C</button>
-        <button>defenition D</button>
+        <button onclick="buttonClicked(0)">definition A</button>
+        <button onclick="buttonClicked(1)">definition B</button>
+        <button onclick="buttonClicked(2)">definition C</button>
+        <button onclick="buttonClicked(3)">definition D</button>
+    </div>
+
+    <p id="score">00/00</p>
+
+    <div id="done">
+        <p>Completed!</p>
+        <button onclick="location.reload()">restart</button>
     </div>
 
     <script src="learndef.js"></script>
