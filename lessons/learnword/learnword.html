@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Words</title>
+</head>
+<body onload="learnword_onload()">
+    <h1 id="title">Word quiz for lesson 00</h1>
+    <p id="question">definition</p>
+
+    <div id="anwsers">
+        <button onclick="buttonClicked(0)">word A</button>
+        <button onclick="buttonClicked(1)">word B</button>
+        <button onclick="buttonClicked(2)">word C</button>
+        <button onclick="buttonClicked(3)">word D</button>
+    </div>
+
+    <p id="score">00/00</p>
+
+    <div id="done">
+        <p>Completed!</p>
+        <button onclick="location.reload()">restart</button>
+    </div>
+
+    <script src="learnword.js"></script>
+    <script src="../../lessondata.js"></script>
+</body>
+</html>
